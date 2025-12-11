@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="東京渋谷、新宿の格安無人撮影スタジオ。小型プライベート撮影空間、低価格で商品撮影、人物撮影、自撮り撮影、フォトスタジオの予約が可能。完全予約制、後払い、料金安い、最高品質！">
   <meta name="twitter:image" content="http://www.yourdomain.com/yourimage.jpg">
   <meta name="twitter:card" content="summary_large_image">
-
+  <script async data-id="101498000" src="//static.getclicky.com/js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -79,13 +79,24 @@
     const top = target.offsetTop - offset;
     window.scrollTo({ top, behavior: 'smooth' });
   };
+
+function zoomImage() {
+  const zoomContainer = document.getElementById('zoomedImage');
+  zoomContainer.style.display = 'flex';
+}
+
+function closeZoom() {
+  const zoomContainer = document.getElementById('zoomedImage');
+  zoomContainer.style.display = 'none';
+}
+
 </script>
 
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only"></span>
         </div>
     </div>
     <!-- Spinner End -->
@@ -226,14 +237,20 @@
                     </div>
                     <div class="col-md-7">
                         <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
-                            <h3 class="text-uppercase">渋谷店・ホラスタジオ（約15㎡）</h3>
+                            <h3 class="text-uppercase">渋谷西新宿店・ホラスタジオ・約15㎡</h3>
                             <p class="mb-4">
-<b>利用可能時間</b><br>
-平日 06:00〜24:00：<br><font style="color: #ff1ce4; font-size: 16pt;">1時間 2,299円</font>（最低2時間利用）<br>
-週末・祝日 06:00〜24:00：<br><font style="color: #ff1ce4; font-size: 16pt;">1時間 2,699円</font>（最低2時間利用）<br>
+古い建物の中で、創造的なインスピレーションが満ちる静かな空間<br>
+平日 06:00〜24:00<br><font style="color: #fd1ce2; font-size: 16pt;">1時間 2,200円</font>（最低2時間利用）<br>
+週末・祝日 06:00〜24:00<br><font style="color: #fd1ce2; font-size: 16pt;">1時間 2,600円</font>（最低2時間利用）<br>
+<font style="color: #FF416C; font-size: 9pt;">初めてのご利用で、次回使える半額割引コードをプレゼント！
+<br>さらに、ご利用後48時間以内にメールでお送りします。コードは4ヶ月間有効です。</font><br>
 <br>
-東京都渋谷区本町３丁目22ー8号Ａ棟1階<br>
-都営大江戸線/西新宿五丁目駅 徒歩4分<br>
+<img src="img/map.jpg" width="250" height="auto" id="mapImage" onclick="zoomImage()">
+<div id="zoomedImage" class="zoom-container" onclick="closeZoom()">
+<img src="img/map.jpg" id="zoomedImg">
+</div>
+東京都渋谷区本町３丁目２２ー８号Ａ棟１階<br>
+都営大江戸線／西新宿五丁目駅（Ａ１）徒歩4分<br>
 三井のリパーク渋谷本町３丁目第５駐車場<br>
 タイムズ西新宿５丁目第２駐車場<br>
 <br>
@@ -264,12 +281,11 @@ LED定常光（FS-300B 高出力350W ライブ配信 色温度2700-6500K 12種�
                     </div>
                     <div class="col-md-7">
                         <div class="service-text px-5 px-md-0 py-md-5 text-md-end wow fadeInLeft" data-wow-delay="0.5s">
-                            <h3 class="text-uppercase">六本木店・ホラスタジオ（約25㎡）</h3>
+                            <h3 class="text-uppercase">六本木店・ホラスタジオ・約25㎡</h3>
                             <p class="mb-4">
-<b>利用可能時間</b><br>
-<font style="color: #ff1ce4; font-size: 16pt;">現在、改装中のため、休業しております。</font><br>
-平日 06:00〜24:00：<br><font style="color: #ff1ce4; font-size: 16pt;">1時間 3,299円</font>（最低2時間利用）<br>
-週末・祝日 06:00〜24:00：<br><font style="color: #ff1ce4; font-size: 16pt;">1時間 3,699円</font>（最低2時間利用）<br>
+<font style="color: #fd1ce2; font-size: 16pt;">現在、改装中のため、休業しております。</font><br>
+平日 06:00〜24:00<br><font style="color: #fd1ce2; font-size: 16pt;">1時間 3,200円</font>（最低2時間利用）<br>
+週末・祝日 06:00〜24:00<br><font style="color: #fd1ce2; font-size: 16pt;">1時間 3,600円</font>（最低2時間利用）<br>
 <br>
 <b>無料で使用できる設備・備品</b><br>
 バックドロップ（白色、黒色、灰色、緑色）<br>
@@ -338,7 +354,7 @@ LED定常光 x 2（FS-300B 高出力350W ライブ配信 色温度2700-6500K 12�
                             <h1>ご利用の流れ</h1>
                         </div>
                     </div>
-                    <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s"><font style="color: #FF416C; font-size: 16pt;">予約無料、ご利用後にお支払い！</font><br><br>
+                    <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s"><font style="color: #fd1ce2; font-size: 16pt;">予約無料、ご利用後にお支払い！</font><br><br>
                         STEP 1 → オンラインで簡単に予約申請<br>⇩<br>
                         STEP 2 → ご指定の時間にご利用<br>⇩<br>
                         STEP 3 → 退室時にお支払い</p>
@@ -723,16 +739,6 @@ LED定常光 x 2（FS-300B 高出力350W ライブ配信 色温度2700-6500K 12�
             <a href="index.html">
                 <h1 class="display-4 mb-3 text-white text-uppercase"><img class="icon" width="65" height="auto" src="img/icon.png">Hora Studio</h1>
             </a>
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-x-twitter"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-youtube"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-linkedin-in"></i></a>
-            </div>
             <p>&copy; 2025 ホラスタジオ, All Right Reserved.</p>
             <p>※本サイトは、SSL暗号化通信およびreCAPTCHAによってお客様の情報を保護しており、<br>Googleのプライバシーポリシーおよび利用規約が適用されます。</p>
             <p><a href="terms" target="_blank">利用規約</a>　<a href="privacy" target="_blank">プライバシーポリシー</a></p>

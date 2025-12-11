@@ -104,3 +104,14 @@ modal.addEventListener('click', e => {
         modalImg.src = '';
     }
 });
+
+
+function zoomImage() {
+  const zoomContainer = document.getElementById('zoomedImage');
+  zoomContainer.style.display = 'flex';
+}
+
+function closeZoom() {
+  const zoomContainer = document.getElementById('zoomedImage');
+  zoomContainer.style.display = 'none';
+}
