@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>お問い合せ - ホラスタジオ</title>
-<link rel="shortcut icon" href="../favicon.ico">
-<script async data-id="101499743" src="//static.getclicky.com/js"></script>
-<style>
-  body {
-    background-color: #000;
-  }
-
-  #loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    background-image: url('../img/carousel-2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9998;
-  }
-
-  .dots {
-    display: flex;
-    gap: 15px;
-  }
-
-  .dot {
-    width: 30px;
-    height: 30px;
-    background-color: #D23478;
-    border-radius: 50%;
-    animation: bounce 0.6s infinite alternate;
-  }
-
-  .dot:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .dot:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-  @keyframes bounce {
-    from {
-      transform: translateY(0);
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fd1ce2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     }
-    to {
-      transform: translateY(-20px);
+
+    .contact-wrapper {
+      min-height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
     }
+
+    .contact-box {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 32px;
+      font-size: 1.8rem;
+      letter-spacing: 0.1em;
+    }
+
+    .contact-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 4, 1fr));
+      gap: 20px;
+    }
+
+    .contact-item {
+      border: 1px solid #fd1ce2;
+      padding: 20px;
+      text-decoration: none;
+      color: #fd1ce2;
+      transition: all 0.3s ease;
+      border-radius: 20px;
+    }
+
+    .contact-item:hover {
+      background-color: #fd1ce2;
+      color: #000;
+    }
+
+    .contact-title {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-desc {
+      font-size: 0.8rem;
+      opacity: 0.85;
+    }
+
+    .small-text {
+      text-align: center;
+      font-size: 0.85rem;
+      line-height: 1.4;
   }
-</style>
+  </style>
+  <script async data-id="101499743" src="//static.getclicky.com/js"></script>
 </head>
+
 <body>
+  <div class="contact-wrapper">
+    <div class="contact-box">
+      <h1>お問い合わせ</h1>
 
-<p style="text-align: center;"><img src="../img/icon.png" width="100" height="100"></p>
+      <div class="contact-links">
+        <a href="chat" class="contact-item">
+          <div class="contact-title">オンラインチャット相談</div>
+          <div class="contact-desc">リアルタイムで対応</div>
+        </a>
 
-<div id="loading-screen">
-  <div class="dots">
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
+        <a href="call" class="contact-item">
+          <div class="contact-title">無料通話相談</div>
+          <div class="contact-desc">オンライン音声通話による無料相談</div>
+        </a>
+
+        <a href="otoiawase" class="contact-item">
+          <div class="contact-title">お問い合わせフォーム</div>
+          <div class="contact-desc">24時間受付可能</div>
+        </a>
+
+        <a href="mailto:yoyaku@hora.jp" class="contact-item">
+          <div class="contact-title">yoyaku@hora.jp</div>
+          <div class="contact-desc">メールでのお問い合わせ</div>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
+  <p class="small-text">&copy; 2026 ホラスタジオ All Right Reserved.</p>
 
-<iframe src="https://app.formbricks.com/s/cmhpztheo1txsad013m51ul8n" width="100%" height="768" style="border-radius: 32px; border:none;"></iframe>
-
-<script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      document.getElementById('loading-screen').style.display = 'none';
-    }, 1000);
-  });
-</script>
-
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/690ee2fcc7778b19591c33cb/1j9h2db4i';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-
-  <div class="copyright">
-  <p style="text-align: center; font-size: 8pt; color: #fff;">© 2025 ホラスタジオ All rights reserved.</p>
-  </div>
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/690ee2fcc7778b19591c33cb/1j9h2db4i';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
 
 </body>
 </html>
